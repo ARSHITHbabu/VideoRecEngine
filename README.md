@@ -149,14 +149,6 @@ The recommendation engine utilizes **content-based filtering** and **user engage
 
 ---
 
-## 📌 Author  
-
-👨‍💻 **[Your Name]** – AI & ML Enthusiast  
-📂 **GitHub**: [Your GitHub Profile](https://github.com/your-profile)  
-💍 **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/your-profile)  
-
----
-
 ## 🐟 License  
 
 This project is licensed under the **MIT License**.  
