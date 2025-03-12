@@ -1,22 +1,22 @@
-# 🎥 VideoRecEngine - AI-Powered Video Recommendation System  
+# VideoRecEngine - AI-Powered Video Recommendation System  
 
 An advanced **AI-driven video recommendation engine** built using **FastAPI** and **PostgreSQL**, designed to provide personalized video suggestions based on user preferences and engagement patterns.  
 
 ---
 
-## 🚀 Project Overview  
+## Project Overview  
 
 VideoRecEngine leverages **machine learning** and **content-based filtering** to recommend videos tailored to individual users. Key features include:  
 
-🏦 **Personalized Recommendations** – Analyzes user behavior for better suggestions  
-📅 **Category-Based Filtering** – Enables users to filter videos by interest  
-🌟 **FastAPI for High Performance** – Asynchronous API handling for efficiency  
-📚 **PostgreSQL Database** – Ensures structured and scalable data storage  
-🌐 **Alembic Migrations** – Manages database schema changes smoothly  
+**Personalized Recommendations** – Analyzes user behavior for better suggestions  
+**Category-Based Filtering** – Enables users to filter videos by interest  
+**FastAPI for High Performance** – Asynchronous API handling for efficiency  
+**PostgreSQL Database** – Ensures structured and scalable data storage  
+**Alembic Migrations** – Manages database schema changes smoothly  
 
 ---
 
-## 🛠️ Tech Stack  
+## Tech Stack  
 
 - **Backend:** FastAPI (Python)  
 - **Database:** PostgreSQL with SQLAlchemy ORM  
@@ -26,7 +26,7 @@ VideoRecEngine leverages **machine learning** and **content-based filtering** to
 
 ---
 
-## 👋 Prerequisites  
+## Prerequisites  
 
 Ensure you have the following installed before running the project:  
 
@@ -36,9 +36,9 @@ Ensure you have the following installed before running the project:
 
 ---
 
-## 🔧 Installation & Setup  
+## Installation & Setup  
 
-### 1️⃣ Clone the Repository  
+### Clone the Repository  
 
 ```bash
 git clone <repository-url>
@@ -47,7 +47,7 @@ cd VideoRecEngine
 
 ---
 
-### 2️⃣ Set Up Virtual Environment  
+### Set Up Virtual Environment  
 
 ```bash
 python -m venv venv
@@ -56,7 +56,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 ---
 
-### 3️⃣ Install Dependencies  
+### Install Dependencies  
 
 ```bash
 pip install -r requirements.txt
@@ -64,7 +64,7 @@ pip install -r requirements.txt
 
 ---
 
-### 4️⃣ Configure Environment Variables  
+### Configure Environment Variables  
 
 Create a `.env` file in the root directory and add the following:  
 
@@ -74,7 +74,7 @@ DATABASE_URL=postgresql://user:password@localhost/video_rec_db
 
 ---
 
-### 5️⃣ Run Database Migrations  
+### Run Database Migrations  
 
 ```bash
 alembic upgrade head
@@ -82,7 +82,7 @@ alembic upgrade head
 
 ---
 
-### 6️⃣ Start the FastAPI Server  
+### Start the FastAPI Server  
 
 ```bash
 uvicorn main:app --reload
@@ -90,9 +90,9 @@ uvicorn main:app --reload
 
 ---
 
-## 📊 API Endpoints  
+## API Endpoints  
 
-### 1️⃣ Get Personalized Video Feed  
+### Get Personalized Video Feed  
 
 ```http
 GET /feed?username={username}
@@ -112,7 +112,7 @@ GET /feed?username={username}
 
 ---
 
-### 2️⃣ Get Category-Based Video Feed  
+### Get Category-Based Video Feed  
 
 ```http
 GET /feed?username={username}&category_id={category_id}
@@ -120,28 +120,28 @@ GET /feed?username={username}&category_id={category_id}
 
 ---
 
-## 🧠 Algorithm & Approach  
+## Algorithm & Approach  
 
 The recommendation engine utilizes **content-based filtering** and **user engagement analysis**:  
 
-### 1️⃣ Data Collection & Processing  
+### Data Collection & Processing  
 
 - Collects user interactions (likes, views, ratings)  
 - Stores structured data in PostgreSQL  
 
-### 2️⃣ Feature Engineering  
+### Feature Engineering  
 
 - Analyzes video metadata (title, description, category)  
 - Encodes categorical features for model training  
 
-### 3️⃣ Recommendation Model  
+### Recommendation Model  
 
 - Uses **cosine similarity** and **ranking methods** for recommendations  
 - Implements **popularity-based fallback** for new users  
 
 ---
 
-## 🚀 Future Enhancements  
+## Future Enhancements  
 
 🔹 **Collaborative Filtering** – Improve recommendations using user similarity  
 🔹 **Machine Learning Model** – Train deep learning models for better predictions  
@@ -149,6 +149,6 @@ The recommendation engine utilizes **content-based filtering** and **user engage
 
 ---
 
-## 🐟 License  
+## License  
 
 This project is licensed under the **MIT License**.  
